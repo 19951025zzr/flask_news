@@ -1,0 +1,11 @@
+{% extends 'home_base.html' %}
+{% block head %}
+<title>新闻详情页</title>
+{% endblock %}
+{% block content %}
+<h3>{{ new_obj.title }}</h3>
+  <div class="img-content">
+            <img src="{{ new_obj.image }}" alt="图片">
+        </div>
+<p>{{ new_obj.content }}</p>
+{% endblock %}
